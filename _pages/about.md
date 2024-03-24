@@ -2,24 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Postdoctoral researcher at [Seoul National University](https://biosci.snu.ac.kr/elegans/en).
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Seoul National University 105-319</p>
+    <p>1 Gwanak-ro, Gwanak-gu</p>
+    <p>Seoul, Republic of Korea 08826</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Alexander Bae is a postdoctoral researcher at Seoul National University (SNU). Prior to SNU, he received PhD in Electrical and Computer Engineering and Neuroscience from Princeton University, where he was advised by Dr. Sebastian Seung. He received BS in Electrical Engineering from Korea Advanced Institute of Science and Technology (KAIST).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+His research focuses on connectomics using Electron Microscopy (EM). His research utilizes 3D EM image stacks to reconstruct the neural circuit and organelles using artificial intelligence and relates derived structural properties to functional properties to provide insights on how the neural circuit in the brain operates. During his PhD, his research was concentrated on mouse visual system, and his current work involves comparing various developmental stages in *C*. *elegans*.
