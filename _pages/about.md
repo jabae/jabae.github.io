@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral researcher at [Seoul National University](https://biosci.snu.ac.kr/elegans/en).
+subtitle: Postdoctoral researcher at [Seoul National University](https://biosci.snu.ac.kr/elegans/en/).
 
 profile:
   align: right
