@@ -289,7 +289,7 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 
 scholar:
   last_name: [Bae]
-  first_name: [J. Alexander]
+  first_name: [J. Alexander, J.A., J Alexander]
 
   style: apa
   locale: en

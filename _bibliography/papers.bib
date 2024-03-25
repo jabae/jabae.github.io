@@ -1,6 +1,5 @@
 ---
 ---
-
 @article{bae2018,
 abbr = {Cell},
 title = {Digital Museum of Retinal Ganglion Cells with Dense Anatomy and Physiology},
@@ -30,20 +29,18 @@ year = {2022},
 issn = {0092-8674},
 doi = {https://doi.org/10.1016/j.cell.2022.01.023},
 url = {https://www.sciencedirect.com/science/article/pii/S0092867422001349},
-author = {Nicholas L. Turner and Thomas Macrina and J. Alexander Bae and Runzhe Yang and Alyssa M. Wilson and Casey Schneider-Mizell and Kisuk Lee and Ran Lu and Jingpeng Wu and Agnes L. Bodor and Adam A. Bleckert and Derrick Brittain and Emmanouil Froudarakis and Sven Dorkenwald and Forrest Collman and Nico Kemnitz and Dodam Ih and William M. Silversmith and Jonathan Zung and Aleksandar Zlateski and Ignacio Tartavull and Szi-chieh Yu and Sergiy Popovych and Shang Mu and William Wong and Chris S. Jordan and Manuel Castro and JoAnn Buchanan and Daniel J. Bumbarger and Marc Takeno and Russel Torres and Gayathri Mahalingam and Leila Elabbady and Yang Li and Erick Cobos and Pengcheng Zhou and Shelby Suckow and Lynne Becker and Liam Paninski and Franck Polleux and Jacob Reimer and Andreas S. Tolias and R. Clay Reid and Nuno Maçarico {da Costa} and H. Sebastian Seung},
+author = {Nicholas L. Turner* and Thomas Macrina* and J. Alexander Bae* and Runzhe Yang* and Alyssa M. Wilson* and Casey Schneider-Mizell* and Kisuk Lee* and Ran Lu* and Jingpeng Wu* and Agnes L. Bodor* and Adam A. Bleckert* and Derrick Brittain* and Emmanouil Froudarakis* and Sven Dorkenwald* and Forrest Collman* and Nico Kemnitz* and Dodam Ih and William M. Silversmith and Jonathan Zung and Aleksandar Zlateski and Ignacio Tartavull and Szi-chieh Yu and Sergiy Popovych and Shang Mu and William Wong and Chris S. Jordan and Manuel Castro and JoAnn Buchanan and Daniel J. Bumbarger and Marc Takeno and Russel Torres and Gayathri Mahalingam and Leila Elabbady and Yang Li and Erick Cobos and Pengcheng Zhou and Shelby Suckow and Lynne Becker and Liam Paninski and Franck Polleux and Jacob Reimer and Andreas S. Tolias and R. Clay Reid and Nuno Maçarico {da Costa} and H. Sebastian Seung},
 keywords = {mouse, cortex, 3D reconstruction, electron microscopy, calcium imaging, pyramidal cell, mitochondria, synaptic connectivity, inhibitory cell, visual cortex},
 abstract = {We assembled a semi-automated reconstruction of L2/3 mouse primary visual cortex from ∼250 × 140 × 90 μm3 of electron microscopic images, including pyramidal and non-pyramidal neurons, astrocytes, microglia, oligodendrocytes and precursors, pericytes, vasculature, nuclei, mitochondria, and synapses. Visual responses of a subset of pyramidal cells are included. The data are publicly available, along with tools for programmatic and three-dimensional interactive access. Brief vignettes illustrate the breadth of potential applications relating structure to function in cortical circuits and neuronal cell biology. Mitochondria and synapse organization are characterized as a function of path length from the soma. Pyramidal connectivity motif frequencies are predicted accurately using a configuration model of random graphs. Pyramidal cells receiving more connections from nearby cells exhibit stronger and more reliable visual responses. Sample code shows data access and analysis.},
 selected = {true},
 pdf = {Turner2022.pdf}
 }
 
-@article{Yim2024,
+@article{yim2024,
   abbr = {NatComm},
   title    = {Comparative connectomics of dauer reveals developmental
               plasticity},
-  author   = {Yim, Hyunsoo and Choe, Daniel T and Bae, J Alexander and Choi,
-              Myung-Kyu and Kang, Hae-Mook and Nguyen, Ken C Q and Ahn,
-              Soungyub and Bahn, Sang-Kyu and Yang, Heeseung and Hall, David H and Kim, Jinseop S and Lee, Junho},
+  author   = {Yim*, Hyunsoo and Choe*, Daniel T and Bae*, J Alexander and Choi, Myung-Kyu and Kang, Hae-Mook and Nguyen, Ken C Q and Ahn, Soungyub and Bahn, Sang-Kyu and Yang, Heeseung and Hall, David H and Kim, Jinseop S and Lee, Junho},
   abstract = {A fundamental question in neurodevelopmental biology is how
               flexibly the nervous system changes during development. To
               address this, we reconstructed the chemical connectome of dauer, an alternative developmental stage of nematodes with distinct behavioral characteristics, by volumetric reconstruction and automated synapse detection using deep learning. With the basic architecture of the nervous system preserved, structural changes in neurons, large or small, were closely associated with connectivity changes, which in turn evoked dauer-specific behaviors such as nictation. Graph theoretical analyses revealed significant dauer-specific rewiring of sensory neuron connectivity and increased clustering within motor neurons in the dauer connectome. We suggest that the nervous system in the nematode has evolved to respond to harsh environments by developing a quantitatively and qualitatively differentiated connectome.},
@@ -111,4 +108,20 @@ month    =  "mar",
 year     =  "2022",
 keywords = "Julia language; clustering; connectomics; morphological analysis; neuron connectivity; neuron morphology; skeletonization",
 pdf={Wu2022.pdf}
+}
+
+@article{popovych2024,
+  abbr = "NatComm",
+  title    = "Petascale pipeline for precise alignment of images from serial
+              section electron microscopy",
+  author   = "Popovych, Sergiy and Macrina, Thomas and Kemnitz, Nico and
+              Castro, Manuel and Nehoran, Barak and Jia, Zhen and Bae, J
+              Alexander and Mitchell, Eric and Mu, Shang and Trautman, Eric T and Saalfeld, Stephan and Li, Kai and Seung, H Sebastian",
+  abstract = "The reconstruction of neural circuits from serial section electron microscopy (ssEM) images is being accelerated by automatic image segmentation methods. Segmentation accuracy is often limited by the preceding step of aligning 2D section images to create a 3D image stack. Precise and robust alignment in the presence of image artifacts is challenging, especially as datasets are attaining the petascale. We present a computational pipeline for aligning ssEM images with several key elements. Self-supervised convolutional nets are trained via metric learning to encode and align image pairs, and they are used to initialize iterative fine-tuning of alignment. A procedure called vector voting increases robustness to image artifacts or missing image data. For speedup the series is divided into blocks that are distributed to computational workers for alignment. The blocks are aligned to each other by composing transformations with decay, which achieves a global alignment without resorting to a time-consuming global optimization. We apply our pipeline to a whole fly brain dataset, and show improved accuracy relative to prior state of the art. We also demonstrate that our pipeline scales to a cubic millimeter of mouse visual cortex. Our pipeline is publicly available through two open source Python packages.",
+  journal  = "Nature Communications",
+  volume   =  "15",
+  number   =  "1",
+  pages    =  "289",
+  month    =  "jan",
+  year     =  "2024"
 }

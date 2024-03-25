@@ -2,96 +2,72 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Junhwan Alexander Bae
+    - name: Position
+      value: Postdoctoral researcher (SNU Science Fellow)
+    - name: Affiliation
+      value: Research Institute of Basic Sciences, Seoul National University
+    - name: E-mail
+      value: jabae@snu.edu
     - name: Languages
-      value: English, German
+      value: English, Korean
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: PhD in Electrical and Computer Engineering and Neuroscience
+      institution: Princeton University, Princeton, NJ, USA
+      year: 2015 - 2022
+    - title: MA in Electrical and Computer Engineering
+      institution: Princeton University, Princeton, NJ, USA
+      year: 2015 - 2017
+    - title: BS in Electrical Engineering
+      institution: KAIST, Daejeon, Republic of Korea
+      year: 2011 - 2015
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Postdoctoral researcher (SNU Science Fellow)
+      description: SNU Science Fellow
+      institution: Research Institute of Basic Sciences, Seoul National University
+      year: 2021 - now
+    - title: Software engineer
+      description: Part-time
+      institution: Zetta AI
+      year: 2020 - now
+    - title: Graduate student researcher
+      description: Gordon Y.S. Wu Fellow
+      institution: Princeton University
+      year: 2016 - 2021
+    - title: Research assistant
+      institution: KAIST
+      year: 2015
+    - title: Undergraduate researcher
+      institution: KAIST
+      year: 2014 - 2015
+    - title: Research intern
+      institution: Wellman Center for Photomedicine, Massachusetts General Hospital
+      year: 2014
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - SNU Science Fellowship
+    - year: 2018
       items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
+        - Andrew Kim Memorial Foundation Engineering Award
+    - year: 2015
+      items: 
+        - Gordon Y.S. Wu Fellowship
+    - year: 2014
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Scholarship for Academic Excellence
+    - year: 2013
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Jongha Scholarship
+    - year: 2012
+      items:
+        - KFAS Undergraduate Student Scholarship
