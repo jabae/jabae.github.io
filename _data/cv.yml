@@ -4,11 +4,11 @@
     - name: Full Name
       value: Junhwan Alexander Bae
     - name: Position
-      value: Postdoctoral researcher (SNU Science Fellow)
+      value: Research scientist
     - name: Affiliation
-      value: Research Institute of Basic Sciences, Seoul National University
+      value: Zetta AI
     - name: E-mail
-      value: jabae@snu.edu
+      value: alexconnectome@gmail.com
     - name: Languages
       value: English, Korean
 
@@ -28,14 +28,13 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Research scientist
+      institution: Zetta AI
+      year: 2025 - now
     - title: Postdoctoral researcher (SNU Science Fellow)
       description: SNU Science Fellow
       institution: Research Institute of Basic Sciences, Seoul National University
-      year: 2021 - now
-    - title: Software engineer
-      description: Part-time
-      institution: Zetta AI
-      year: 2023 - now
+      year: 2021 - 2025
     - title: Graduate student researcher (Gordon Y.S. Wu Fellow)
       institution: Princeton University
       year: 2016 - 2021
