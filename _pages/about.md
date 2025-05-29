@@ -8,10 +8,6 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Seoul National University 105-319</p>
-    <p>1 Gwanak-ro, Gwanak-gu</p>
-    <p>Seoul, Republic of Korea 08826</p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
