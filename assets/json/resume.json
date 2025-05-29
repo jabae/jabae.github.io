@@ -11,7 +11,7 @@
       "address": "1 Gwanak-ro, Gwanak-gu",
       "postalCode": "08826",
       "city": "Seoul",
-      "countryCode": "Republic of Korea",
+      "countryCode": "Republic of Korea"
       // "region": "California"
     }
   },
@@ -22,7 +22,7 @@
       "area": "Electrical Engineering",
       "studyType": "B.S.",
       "startDate": "2011-02-01",
-      "endDate": "2015-02-01",
+      "endDate": "2015-02-01"
     },
     {
       "institution": "Princeton University",
@@ -30,7 +30,7 @@
       "area": "Electrical and Computer Engineering",
       "studyType": "M.A.",
       "startDate": "2015-09-01",
-      "endDate": "2017-09-01",
+      "endDate": "2017-09-01"
     },
     {
       "institution": "Princeton University",
@@ -38,7 +38,7 @@
       "area": "Electrical and Computer Engineering and Neuroscience",
       "studyType": "Ph.D.",
       "startDate": "2015-09-01",
-      "endDate": "2022-01-01",
+      "endDate": "2022-01-01"
     }
   ],
   "work": [
@@ -47,7 +47,7 @@
       "position": "Postdoctoral Fellow (SNU Science Fellow)",
       "startDate": "2021-11-01",
       "endDate": "",
-      "summary": "",
+      "summary": ""
       // "highlights": ["Relativity"]
     },
     {
@@ -55,10 +55,10 @@
       "position": "Postdoctoral Fellow (SNU Science Fellow)",
       "startDate": "2021-11-01",
       "endDate": "",
-      "summary": "",
+      "summary": ""
       // "highlights": ["Relativity"]
     }
-  ],
+  ]
   // "volunteer": [
   //   {
   //     "organization": "People's Climate March",
