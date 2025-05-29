@@ -6,7 +6,8 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: J. Alexander
 middle_name:
 last_name: Bae
-email: alexconnectome@gmail.com
+contact_note: >
+  Please feel free to contact me via email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -21,6 +22,7 @@ url: https://jabae.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+back_to_top: true # set to false to disable the back to top button
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -40,17 +42,19 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: false
-
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
 footer_fixed: true
+search_enabled: true
+socials_in_search: true
+posts_in_search: true
+bib_search: true
 
 # Dimensions
-max_width: 800px
+max_width: 930px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -115,6 +119,8 @@ contact_note: >
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
 google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
+pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
+openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
@@ -163,28 +169,27 @@ external_sources:
     rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
+# Newsletter
+# -----------------------------------------------------------------------------
+
+newsletter:
+  enabled: false
+  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
+  # https://loops.so/docs/forms/custom-form
+
+# -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
 
 collections:
+  books:
+    output: true
   news:
     defaults:
       layout: post
     output: true
-    permalink: /news/:path/
   projects:
     output: true
-    permalink: /projects/:path/
-
-announcements:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -204,7 +209,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ["_pages", "_scripts"]
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -261,27 +266,33 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt"]
-  uglifier_args:
-    harmony: true
+  compress_javascript: false # set to false since we are using terser as the js minifier
+  exclude: ["robots.txt", "assets/js/search/*.js"]
+
+# -----------------------------------------------------------------------------
+# Terser
+# -----------------------------------------------------------------------------
+
+terser:
+  compress:
+    drop_console: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+  posts:
+    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    permalinks:
+      year: "/blog/:year/"
+      tags: "/blog/:type/:name/"
+      categories: "/blog/:type/:name/"
+  books:
+    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -317,6 +328,7 @@ enable_publication_badges:
   altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
   dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -377,6 +389,8 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 
 enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
+enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
+enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
@@ -387,6 +401,7 @@ enable_navbar_social: false # enables displaying social links in the navbar on t
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------
 # Library versions
