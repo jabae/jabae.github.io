@@ -3,17 +3,24 @@
     "name": "J. Alexander Bae",
     "label": "",
     "image": "",
-    "email": "jabae@snu.ac.kr",
+    "email": "alexconnectome@gmail.com",
     // "phone": "",
     "url": "https://jabae.github.io/",
     // "summary": "",
     "location": {
-      "address": "1 Gwanak-ro, Gwanak-gu",
-      "postalCode": "08826",
+      "address": "",
+      "postalCode": "",
       "city": "Seoul",
       "countryCode": "Republic of Korea"
       // "region": "California"
-    }
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jalexbae",
+        "url": "https://www.linkedin.com/in/jalexbae/"
+      }
+    ]
   },
   "education": [
     {
@@ -27,14 +34,6 @@
     {
       "institution": "Princeton University",
       "location": "Princeton, USA",
-      "area": "Electrical and Computer Engineering",
-      "studyType": "M.A.",
-      "startDate": "2015-09-01",
-      "endDate": "2017-09-01"
-    },
-    {
-      "institution": "Princeton University",
-      "location": "Princeton, USA",
       "area": "Electrical and Computer Engineering and Neuroscience",
       "studyType": "Ph.D.",
       "startDate": "2015-09-01",
@@ -43,20 +42,19 @@
   ],
   "work": [
     {
-      "name": "Research Institute of Basic Sciences, Seoul National University",
-      "position": "Postdoctoral Fellow (SNU Science Fellow)",
-      "startDate": "2021-11-01",
+      "name": "Zetta AI",
+      "position": "Research Scientist",
+      "url": "https://zetta.ai/",
+      "startDate": "2025-03-01",
       "endDate": "",
       "summary": ""
-      // "highlights": ["Relativity"]
     },
     {
       "name": "Research Institute of Basic Sciences, Seoul National University",
       "position": "Postdoctoral Fellow (SNU Science Fellow)",
       "startDate": "2021-11-01",
-      "endDate": "",
+      "endDate": "2025-02-28",
       "summary": ""
-      // "highlights": ["Relativity"]
     }
   ]
   // "volunteer": [
