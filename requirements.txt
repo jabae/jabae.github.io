@@ -1,5 +1,1 @@
-jupyter>=1.0.0
-notebook>=6.0.0
-ipykernel>=6.0.0
-nbconvert>=7.0.0
-ipywidgets>=8.0.0 
+nbconvert
